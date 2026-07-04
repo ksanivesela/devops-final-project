@@ -1,4 +1,4 @@
-const API="http://localhost:5000";
+const API="/api";
 
 async function cargarUsuarios(){
 
