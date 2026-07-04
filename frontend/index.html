@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Sistema DevOps</title>
+
+    <link rel="stylesheet"
+          href="styles.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Mini Sistema DevOps</h1>
+
+    <p class="subtitulo">
+        Frontend + Flask + PostgreSQL + Docker
+    </p>
+
+    <div class="card">
+
+        <input
+            id="nombre"
+            type="text"
+            placeholder="Nombre">
+
+        <input
+            id="correo"
+            type="email"
+            placeholder="Correo">
+
+        <button onclick="guardarUsuario()">
+            Guardar Usuario
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Usuarios registrados</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Acción</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tablaUsuarios">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
